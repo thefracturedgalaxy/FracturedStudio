@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fractured Studios | Build. Create. Develop.</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fractured Studios | Build. Create. Develop.">
 <meta property="og:description" content="An independent development organization bringing developers and creators together to build ambitious projects and communities.">
-<meta property="og:image" content="https://YOUR-DOMAIN.pages.dev/og-image.png">
+<meta property="og:image" content="https://fracturedstudios.pages.dev/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Fractured Studios","alternateName":"Fractured Studios","url":"https://fracturedstudios.pages.dev/"}</script>
 <meta name="description" content="Fractured Studios is an independent development organization bringing developers and creators together to build ambitious projects and communities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -211,7 +213,7 @@ footer small{display:block;color:var(--mute);margin-top:14px;max-width:52ch;font
 <p>Members can build professional experience, maintain a portfolio, earn certifications through training, take on leadership responsibilities, and showcase the projects they've worked on.</p></div>
 <div class="note"><strong style="color:var(--tx)">Developer profiles are created with the contributor's permission.</strong> The profiles below are sample data that shows the layout.</div>
 <div class="grid" id="profs"></div>
-<div class="btns"><a class="btn p" href="https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/edit#response=ACYDBNiGoNCZuzAmQONgFTdMFiDisfVrYNHXLfsnJz4-jD51F3_XNGqi1pSwOAXYsGLn_Ak">View Developer Network</a></div>
+<div class="btns"><a class="btn p" href="https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform" target="_blank" rel="noopener">View Developer Network</a></div>
 </div></section>
 
 <section class="page" id="training"><div class="wrap tight">
@@ -237,7 +239,7 @@ footer small{display:block;color:var(--mute);margin-top:14px;max-width:52ch;font
 <div>Trainees<span>Learn through practical assignments</span></div>
 </div>
 <div class="btns" style="justify-content:center;margin-top:48px">
-<a class="btn p" href="https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/edit#response=ACYDBNiGoNCZuzAmQONgFTdMFiDisfVrYNHXLfsnJz4-jD51F3_XNGqi1pSwOAXYsGLn_Ak">STAFF PORTAL</a>
+<a class="btn p" href="https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform" target="_blank" rel="noopener">STAFF PORTAL</a>
 <a class="btn p" href="https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform" target="_blank" rel="noopener">STAFF APPLICATIONS</a>
 </div>
 </div></section>
@@ -307,10 +309,10 @@ $("#depts").innerHTML=DEPTS.map(([n,x])=>`<div class="card"><h3>${n}</h3><p>${x}
 $("#tdepts").innerHTML=["Building","3D Modeling","Animation","UI/UX","VFX","Game Design","Community"].map(t=>`<span class="tag" style="font-size:15px;padding:8px 16px;margin-top:10px">${t}</span>`).join("");
 
 const PROFS=[
-["Sample Developer A","Senior Developer","Building",["Level design","Lighting","Terrain"],["Fractured Paradox"],["Building Training: Complete"],["Building Lead"],"[PORTFOLIO_LINK]"],
-["Sample Developer B","Developer","3D Modeling",["Hard-surface","Texturing","Optimization"],["Fractured Paradox"],["3D Modeling Training: Complete"],["None yet"],"[PORTFOLIO_LINK]"],
-["Sample Staff C","Trainer","Community",["Moderation","Event planning","Onboarding"],["Community Infrastructure"],["Trainer Certification"],["Training Team"],"[PORTFOLIO_LINK]"]];
-$("#profs").innerHTML=PROFS.map(p=>`<article class="card prof"><span class="tag">Sample profile</span><h3>${p[0]}</h3><p>${p[1]}</p><dl><dt>Department</dt><dd>${p[2]}</dd><dt>Skills</dt><dd>${p[3].join(", ")}</dd><dt>Projects</dt><dd>${p[4].join(", ")}</dd><dt>Certifications</dt><dd>${p[5].join(", ")}</dd><dt>Leadership</dt><dd>${p[6].join(", ")}</dd><dt>Portfolio</dt><dd><a href="${p[7]}">${p[7]}</a></dd></dl></article>`).join("");
+["Sample Developer A","Senior Developer","Building",["Level design","Lighting","Terrain"],["Fractured Paradox"],["Building Training: Complete"],["Building Lead"],"https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform"],
+["Sample Developer B","Developer","3D Modeling",["Hard-surface","Texturing","Optimization"],["Fractured Paradox"],["3D Modeling Training: Complete"],["None yet"],"https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform"],
+["Sample Staff C","Trainer","Community",["Moderation","Event planning","Onboarding"],["Community Infrastructure"],["Trainer Certification"],["Training Team"],"https://docs.google.com/forms/d/12fACjI39lyA259PUanVz13G3X0-8YHlt5vs_b6hBl8A/viewform"]];
+$("#profs").innerHTML=PROFS.map(p=>`<article class="card prof"><span class="tag">Sample profile</span><h3>${p[0]}</h3><p>${p[1]}</p><dl><dt>Department</dt><dd>${p[2]}</dd><dt>Skills</dt><dd>${p[3].join(", ")}</dd><dt>Projects</dt><dd>${p[4].join(", ")}</dd><dt>Certifications</dt><dd>${p[5].join(", ")}</dd><dt>Leadership</dt><dd>${p[6].join(", ")}</dd><dt>Portfolio</dt><dd><a href="${p[7]}" target="_blank" rel="noopener">View portfolio</a></dd></dl></article>`).join("");
 
 const pages=[...document.querySelectorAll(".page")].map(p=>p.id);
 function route(){
